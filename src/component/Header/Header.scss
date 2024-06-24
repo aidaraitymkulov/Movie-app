@@ -1,0 +1,85 @@
+.header {
+    height: 10vh;
+    line-height: 10vh;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    color: #fff;
+    position: relative;
+    z-index: 999;
+    & > .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 150px;
+        height: 90px;
+    }
+    &__link {
+        margin-left: 30px;
+        color: red ;
+        font-size: 20px;
+
+    }
+    & i {
+        quotes: 40px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin: 0 10px;
+    }
+    & button {
+        background-color: red;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #fff;
+        padding: 12px 40px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    &__btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header nav .header__list {
+        display: none;
+    }
+    .navMenu__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0; 
+        background-color: black ;
+        width: 30%;
+        height: 100vh;
+        z-index: 999;
+    }
+    .header__btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+        cursor: pointer;
+        background: none;
+    }
+
+    .header__link {
+        margin-top: 30px;
+    }
+    
+}
